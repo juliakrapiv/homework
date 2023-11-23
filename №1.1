@@ -1,0 +1,28 @@
+#include ‹iostream>
+int getMax (const int* ar, int size) {
+        int index=0;
+        int max=0;
+        for (int i=0;i<size; i++){
+                if (ar[i]>max){
+                        max=ar[i];
+                        index=i;
+                }
+        }
+        return index;
+}
+int getMin (const int* ar, int size) {
+        int index=0;
+        int min=9999999999;
+        for (int i=0; i‹size; i++){
+                if (ar[i]<min){
+                min=ar[i];
+                index=i;
+                }
+        }
+        return index;
+}
+int main) {
+        int test[5]= {1,2,3,4,5}
+std:: cout<<getMax(test, 5)<<" "<<getMin(test, 5)<<std:: endl;
+return 0;
+}
